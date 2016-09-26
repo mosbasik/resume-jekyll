@@ -23,15 +23,15 @@
 
   <body>
     <main role="main">
-      <article role="article">
+      <article role="article" class="grid">
 
-        <header role="heading">
+        <header role="heading" class="section-name">
           <h1>{{ resume.name }}</h1>
         </header>
 
-        <section>
+        <section class="section-{{ resume.contact.heading | slugify }}">
           <header role="heading">
-            <h2>Contact Information</h2>
+            <h2>{{ resume.contact.heading }}</h2>
           </header>
           <address>
             <ul>
@@ -47,7 +47,7 @@
         </section>
 
         {% if resume.intro.display %}
-          <section>
+          <section class="section-{{ resume.intro.heading | slugify }}">
             <header role="heading">
               <h2>{{ resume.intro.heading }}</h2>
             </header>
@@ -56,7 +56,7 @@
         {% endif %}
 
         {% if resume.education.display %}
-          <section>
+          <section class="section-{{ resume.education.heading | slugify }}">
             <header role="heading">
               <h2>{{ resume.education.heading }}</h2>
             </header>
@@ -65,7 +65,7 @@
         {% endif %}
 
         {% if resume.skills.display %}
-          <section>
+          <section class="section-{{ resume.skills.heading | slugify }}">
             <header role="heading">
               <h2>{{ resume.skills.heading }}</h2>
             </header>
@@ -78,7 +78,7 @@
         {% endif %}
 
         {% if resume.projects.display %}
-          <section>
+          <section class="section-{{ resume.projects.heading | slugify }}">
             <header role="heading">
               <h2>{{ resume.projects.heading }}</h2>
             </header>
@@ -94,7 +94,7 @@
         {% endif %}
 
         {% if resume.work.display %}
-          <section>
+          <section class="section-{{ resume.work.heading | slugify }}">
             <header role="heading">
               <h2>{{ resume.work.heading }}</h2>
             </header>
@@ -110,7 +110,7 @@
         {% endif %}
 
         {% if resume.coursework.display %}
-          <section>
+          <section class="section-{{ resume.coursework.heading | slugify }}">
             <header role="heading">
               <h2>{{ resume.coursework.heading }}</h2>
             </header>

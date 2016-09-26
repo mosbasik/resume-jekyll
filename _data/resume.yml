@@ -9,7 +9,7 @@ name: Peter Henry
 
 contact:
     display: true
-    heading: Contact Information
+    heading: Contact
 
     email:
       heading: Email
