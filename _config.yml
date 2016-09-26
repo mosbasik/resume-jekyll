@@ -5,8 +5,10 @@
 # you use 'jekyll serve'. If you change this file, please restart the server
 # process.
 
+# this shows up in the tab, and is the default name if the page is saved
+title: Peter Henry Resume
 
-title: Resume
+# show up in the preview text when linking the site in some contexts
 description: Resume builder using Jekyll static site generation.
 
  # the subpath of your site, e.g. /blog
