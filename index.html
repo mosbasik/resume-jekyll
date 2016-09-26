@@ -1,79 +1,130 @@
 ---
 ---
 
+<!-- grab the resume data and stick it a variable called "resume" for easy access -->
 {% assign resume = site.data.resume %}
 
-<body style="background-color: {{ site.color }};">
-  
-  <h1>{{ resume.name }}'s {{ site.title }}</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 
-  <h2>Contact Information</h2>
-  <ul>
-    <li>Email: <a href="mailto:{{ resume.email }}" target="_blank">{{ resume.email }}</a></li>
-    <li>Phone: {{ resume.phone }}</li>
-    <li>Skype {{ resume.skype }}</li>
-    <li>Website: <a href="http://{{ resume.website }}" target="_blank">{{ resume.website }}</a></li>
-    <li>GitHub: <a href="https://github.com/{{ resume.github_username }}"  target="_blank">@{{ resume.github_username }}</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/{{ resume.linkedin_custom_url }}" target="_blank">@{{ resume.linkedin_custom_url }}</a></li>
-    <li>Resume: <a href="{{ resume.resume_url }}" target="_blank">{{ resume.resume_url }}</a></li>
-  </ul>
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
+    <link rel="shortcut icon" href="favicon.ico">
 
-  {% if resume.intro.display %}
-    <h2>{{ resume.intro.heading }}</h2>
-    {{ resume.intro.body | markdownify }}
-  {% endif %}
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/resume.css" />
 
-  {% if resume.education.display %}
-    <h2>{{ resume.education.heading }}</h2>
-    {{ resume.education.body | markdownify }}
-  {% endif %}
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
 
-  {% if resume.skills.display %}
-    <h2>{{ resume.skills.heading }}</h2>
-    <ul>
-      {% for skill in resume.skills.body %}
-        <li>{{ skill}}</li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  </head>
 
-  {% if resume.projects.display %}
-    <h2>{{ resume.projects.heading }}</h2>
-    <ul>
-      {% for project in resume.projects.body %}
-        <li>
-          <em><a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a>. {{ project.time }}.</em>
-          <br>
-          {{ project.body | markdownify }}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  <body>
+    <main role="main">
+      <article role="article">
 
-  {% if resume.work.display %}
-    <h2>{{ resume.work.heading }}</h2>
-    <ul>
-      {% for work in resume.work.body %}
-        <li>
-          <em>{{ work.title }}. {{ work.time }}.</em>
-          <br>
-          {{ work.body | markdownify }}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+        <header role="heading">
+          <h1>{{ resume.name }}</h1>
+        </header>
 
-  {% if resume.coursework.display %}
-    <h2>{{ resume.coursework.heading }}</h2>
-    <ul>
-      {% for coursework in resume.coursework.body %}
-        <li>
-          <em>{{ coursework.title }}. {{ coursework.time }}.</em>
-          <br>
-          {{ coursework.body | markdownify }}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+        <section>
+          <header role="heading">
+            <h2>Contact Information</h2>
+          </header>
+          <address>
+            <ul>
+              <li>{{ resume.contact.email.heading }}: <a href="mailto:{{ resume.contact.email.address }}" target="_blank">{{ resume.contact.email.address }}</a></li>
+              <li>{{ resume.contact.phone.heading }}: <a href="tel:{{ resume.contact.phone.number.raw }}">{{ resume.contact.phone.number.display }}</a></li>
+              <li>{{ resume.contact.skype.heading }}: {{ resume.contact.skype.username }}</li>
+              <li>{{ resume.contact.website.heading }}: <a href="{{ resume.contact.website.url }}" target="_blank">{{ resume.contact.website.shortlink }}</a></li>
+              <li>{{ resume.contact.github.heading }}: <a href="{{ resume.contact.github.url }}"  target="_blank">{{ resume.contact.github.shortlink }}</a></li>
+              <li>{{ resume.contact.linkedin.heading }}: <a href="{{ resume.contact.linkedin.url }}" target="_blank">{{ resume.contact.linkedin.shortlink }}</a></li>
+              <li>{{ resume.contact.resume.heading }}: <a href="{{ resume.contact.resume.url }}" target="_blank">{{ resume.contact.resume.shortlink }}</a></li>
+            </ul>
+          </address>
+        </section>
 
-</body>
+        {% if resume.intro.display %}
+          <section>
+            <header role="heading">
+              <h2>{{ resume.intro.heading }}</h2>
+            </header>
+            {{ resume.intro.body | markdownify }}
+          </section>
+        {% endif %}
+
+        {% if resume.education.display %}
+          <section>
+            <header role="heading">
+              <h2>{{ resume.education.heading }}</h2>
+            </header>
+            {{ resume.education.body | markdownify }}
+          </section>
+        {% endif %}
+
+        {% if resume.skills.display %}
+          <section>
+            <header role="heading">
+              <h2>{{ resume.skills.heading }}</h2>
+            </header>
+            <ul>
+              {% for skill in resume.skills.body %}
+                <li>{{ skill}}</li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endif %}
+
+        {% if resume.projects.display %}
+          <section>
+            <header role="heading">
+              <h2>{{ resume.projects.heading }}</h2>
+            </header>
+            {% for project in resume.projects.body %}
+              <article role="article">
+                <header role="heading">
+                  <a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a>. {{ project.time }}.
+                </header>
+                {{ project.body | markdownify }}
+              </article>
+            {% endfor %}
+          </section>
+        {% endif %}
+
+        {% if resume.work.display %}
+          <section>
+            <header role="heading">
+              <h2>{{ resume.work.heading }}</h2>
+            </header>
+              {% for work in resume.work.body %}
+                <article role="article">
+                  <header role="heading">
+                    {{ work.title }}. {{ work.time }}.
+                  </header>
+                  {{ work.body | markdownify }}
+                </article>
+              {% endfor %}
+          </section>
+        {% endif %}
+
+        {% if resume.coursework.display %}
+          <section>
+            <header role="heading">
+              <h2>{{ resume.coursework.heading }}</h2>
+            </header>
+              {% for coursework in resume.coursework.body %}
+                <article role="article">
+                  <header role="heading">
+                    {{ coursework.title }}. {{ coursework.time }}.
+                  </header>
+                  {{ coursework.body | markdownify }}
+                </article>
+              {% endfor %}
+          </section>
+        {% endif %}
+      </article>
+    </main>
+  </body>
+</html>

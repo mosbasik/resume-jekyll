@@ -2,15 +2,63 @@
 # By the way, http://stackoverflow.com/a/21699210 has great information on
 # multi-line string behavior in YAML.  Check it out. 
 
-# Personal information
 name: Peter Henry
-email: me@peterhenry.net
-phone: 817-657-9341
-skype: peter.henry7
-website: peterhenry.net
-github_username: mosbasik
-linkedin_custom_url: peterhenry7
-resume_url: http://git.io/vBqTk
+
+# Contact information
+# (shortlinks should work if typed out, but don't necessarily need to contain "http://www.")
+
+contact:
+    display: true
+    heading: Contact Information
+
+    email:
+      heading: Email
+      address: me@peterhenry.net
+      icon: ''
+
+    phone:
+      heading: Cell
+      number:
+        display: (817) 657-9341
+        raw: 8176579341
+      icon: ''
+
+    skype:
+      heading: Skype
+      username: peter.henry7
+      icon: ''
+
+    website:
+      heading: Website
+      shortlink: peterhenry.net
+      url: http://www.peterhenry.net/
+      icon: ''
+
+    github:
+      heading: GitHub
+      shortlink: github.com/mosbasik
+      url: https://github.com/mosbasik/
+      icon: ''
+
+    linkedin:
+      heading: LinkedIn
+      shortlink: linkedin.com/in/peterhenry7
+      url: https://www.linkedin.com/in/peterhenry7/
+      icon: ''
+
+    resume:
+      heading: Resume
+      shortlink: git.io/vBqTk
+      url: http://git.io/vBqTk
+      icon: ''
+
+# email: me@peterhenry.net
+# phone: 817-657-9341
+# skype: peter.henry7
+# website: peterhenry.net
+# github_username: github.com/mosbasik
+# linkedin_custom_url: linkedin.com/in/peterhenry7
+# resume_url: http://git.io/vBqTk
 
 # Leading section
 intro:
