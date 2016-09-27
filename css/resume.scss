@@ -85,17 +85,31 @@
 
   .section-{{ site.data.resume.contact.heading | slugify }} {
     float: right;
-    width: 40%;
+    width: 41%;
     background-color: orange;
+
+    dt {
+      display: inline-block;
+      font-weight: bold;
+      width: 5em;
+      text-align: right;
+    }
+    dd {
+      display: inline;
+      &:after {
+        display: block;
+        content: '';
+      }
+    }
   }
 
   .section-{{ site.data.resume.intro.heading | slugify }} {
-    width: 60%;
+    width: 59%;
     background-color: yellow;
   }
 
   .section-{{ site.data.resume.education.heading | slugify }} {
-    width: 60%;
+    width: 59%;
     background-color: green;
   }
 
