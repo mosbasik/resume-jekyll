@@ -9,6 +9,29 @@
   box-sizing: border-box;
 }
 
+.latex {
+  // courtest of these two resources:
+  // http://tess.oconnor.cx/2007/08/tex-poshlet
+  // https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/
+  .a, .e {
+    text-transform: uppercase;
+    position: relative;
+    vertical-align: baseline;
+  }
+  .a {
+    font-size: 0.85em;
+    top: -0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+  }
+  .e {
+    font-size: 1em;
+    top: 0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+  }
+}
+
 
 @media screen and (min-width: 480px) {
 

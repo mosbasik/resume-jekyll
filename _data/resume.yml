@@ -101,7 +101,7 @@ skills:
     - Windows
     - OSX
     - Git
-    - LaTeX
+    - <span class="latex">L<span class="a">a</span>T<span class="e">e</span>X</span>
     - Vim
     - Mathematica
     - VirtualBox
