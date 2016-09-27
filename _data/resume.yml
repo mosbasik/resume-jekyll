@@ -10,55 +10,42 @@ name: Peter Henry
 contact:
     display: true
     heading: Contact
+    body:
 
-    email:
-      heading: Email
-      address: me@peterhenry.net
-      icon: ''
+      - display: true
+        heading: Email
+        legible: me@peterhenry.net
+        href: mailto:me@peterhenry.net
 
-    phone:
-      heading: Phone
-      number:
-        display: (817) 657-9341
-        raw: 8176579341
-      icon: ''
+      - display: true
+        heading: Phone
+        legible: (817) 657-9341
+        href: tel:8176579341
 
-    skype:
-      heading: Skype
-      username: peter.henry7
-      icon: ''
+      - display: true
+        heading: Skype
+        legible: peter.henry7
+        href: skype:peter.henry7?chat
 
-    website:
-      heading: Website
-      shortlink: peterhenry.net
-      url: http://www.peterhenry.net/
-      icon: ''
+      - display: true
+        heading: Website
+        legible: peterhenry.net
+        href: http://www.peterhenry.net/
 
-    github:
-      heading: GitHub
-      shortlink: github.com/mosbasik
-      url: https://github.com/mosbasik/
-      icon: ''
+      - display: true
+        heading: GitHub
+        legible: github.com/mosbasik
+        href: https://github.com/mosbasik/
 
-    linkedin:
-      heading: LinkedIn
-      shortlink: linkedin.com/in/peterhenry7
-      url: https://www.linkedin.com/in/peterhenry7/
-      icon: ''
+      - display: true
+        heading: LinkedIn
+        legible: linkedin.com/in/peterhenry7
+        href: https://www.linkedin.com/in/peterhenry7/
 
-    resume:
-      heading: Resume
-      shortlink: git.io/vBqTk
-      url: http://git.io/vBqTk
-      icon: ''
-
-# email: me@peterhenry.net
-# phone: 817-657-9341
-# skype: peter.henry7
-# website: peterhenry.net
-# github_username: github.com/mosbasik
-# linkedin_custom_url: linkedin.com/in/peterhenry7
-# resume_url: http://git.io/vBqTk
+      - display: true
+        heading: Resume
+        legible: git.io/vBqTk
+        href: http://git.io/vBqTk
 
 # Leading section
 intro:

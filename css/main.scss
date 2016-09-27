@@ -9,10 +9,17 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  &:visited {
+    color: blue;
+  }
+}
+
+// LaTeX stylization:
+// http://tess.oconnor.cx/2007/08/tex-poshlet
+// https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/
 .latex {
-  // courtest of these two resources:
-  // http://tess.oconnor.cx/2007/08/tex-poshlet
-  // https://css-tricks.com/snippets/css/prevent-superscripts-and-subscripts-from-affecting-line-height/
   .a, .e {
     text-transform: uppercase;
     position: relative;
@@ -29,6 +36,30 @@
     top: 0.5ex;
     margin-left: -0.1667em;
     margin-right: -0.125em;
+  }
+}
+
+// dot leaders:
+// http://stackoverflow.com/a/25212853/2128530
+// li {
+.dot-leader {
+  // display: block;
+  clear: both;
+
+  span:first-child {
+    float: left;
+    padding-right: .5em;
+  }
+
+  span:last-child {
+    float: right;
+    padding-left: .5em;
+  }
+
+  &:after {
+    content: "········································································································································";
+    display: block;
+    overflow: hidden;
   }
 }
 
@@ -103,20 +134,6 @@
     float: right;
     width: 41%;
     background-color: orange;
-
-    dt {
-      display: inline-block;
-      font-weight: bold;
-      width: 5em;
-      text-align: right;
-    }
-    dd {
-      display: inline;
-      &:after {
-        display: block;
-        content: '';
-      }
-    }
   }
 
   .section-{{ site.data.resume.intro.heading | slugify }} {

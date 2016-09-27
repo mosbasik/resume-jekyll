@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="/css/resume.css" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
     <!--[if IE]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -31,36 +31,31 @@
           </header>
         </section>
 
-        <section class="section-{{ resume.contact.heading | slugify }}">
-          <header role="heading">
-            <h2>{{ resume.contact.heading }}</h2>
-          </header>
-          <address>
-            <dl>
-              <dt>{{ resume.contact.email.heading }}:</dt>
-              <dd><a href="mailto:{{ resume.contact.email.address }}" target="_blank">{{ resume.contact.email.address }}</a></dd>
-
-              <dt>{{ resume.contact.phone.heading }}:</dt>
-              <dd><a href="tel:{{ resume.contact.phone.number.raw }}">{{ resume.contact.phone.number.display }}</a></dd>
-
-              <dt>{{ resume.contact.skype.heading }}:</dt>
-              <dd>{{ resume.contact.skype.username }}</dd>
-
-              <dt>{{ resume.contact.website.heading }}:</dt>
-              <dd><a href="{{ resume.contact.website.url }}" target="_blank">{{ resume.contact.website.shortlink }}</a></dd>
-
-              <dt>{{ resume.contact.github.heading }}:</dt>
-              <dd><a href="{{ resume.contact.github.url }}"  target="_blank">{{ resume.contact.github.shortlink }}</a></dd>
-
-              <dt>{{ resume.contact.linkedin.heading }}:</dt>
-              <dd><a href="{{ resume.contact.linkedin.url }}" target="_blank">{{ resume.contact.linkedin.shortlink }}</a></dd>
-
-              <dt>{{ resume.contact.resume.heading }}:</dt>
-              <dd><a href="{{ resume.contact.resume.url }}" target="_blank">{{ resume.contact.resume.shortlink }}</a></dd>
-
-            </dl>
-          </address>
-        </section>
+        {% if resume.contact.display %}
+          <section class="section-{{ resume.contact.heading | slugify }}">
+            <header role="heading">
+              <h2>{{ resume.contact.heading }}</h2>
+            </header>
+            <address>
+              <ul>
+                {% for item in resume.contact.body %}
+                  {% if item.display %}
+                    <li class="dot-leader">
+                      <span>{{ item.heading }}</span>
+                      <span>
+                        {% if item.href %}
+                          <a href="{{ item.href }}" target="_blank">{{ item.legible }}</a>
+                        {% else %}
+                          {{ item.legible }}
+                        {% endif %}
+                      </span>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </address>
+          </section>
+        {% endif %}
 
         {% if resume.intro.display %}
           <section class="section-{{ resume.intro.heading | slugify }}">
@@ -100,8 +95,9 @@
             </header>
             {% for project in resume.projects.body %}
               <article role="article">
-                <header role="heading">
-                  <a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a> - {{ project.time }}.
+                <header role="heading" class="dot-leader">
+                  <span><a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a></span>
+                  <span>{{ project.time }}</span>
                 </header>
                 {{ project.body | markdownify }}
               </article>
