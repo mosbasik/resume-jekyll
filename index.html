@@ -37,20 +37,22 @@
               <h2>{{ resume.contact.heading }}</h2>
             </header>
             <address>
-              <dl>
+              <table>
                 {% for item in resume.contact.body %}
                   {% if item.display %}
-                    <dt>{{ item.heading }}:</dt>
-                    <dd>
-                      {% if item.href %}
-                        <a href="{{ item.href }}" target="_blank">{{ item.legible }}</a>
-                      {% else %}
-                        {{ item.legible }}
-                      {% endif %}
-                    </dd>
+                    <tr>
+                      <td>{{ item.heading }}</td>
+                      <td>
+                        {% if item.href %}
+                          <a href="{{ item.href }}" target="_blank">{{ item.legible }}</a>
+                        {% else %}
+                          {{ item.legible }}
+                        {% endif %}
+                      </td>
+                    </tr>
                   {% endif %}
                 {% endfor %}
-              </dl>
+              </table>
             </address>
           </section>
         {% endif %}
