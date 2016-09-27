@@ -25,6 +25,7 @@ contact:
       - display: true
         heading: Skype
         legible: peter.henry7
+        href: skype:peter.henry7?chat
 
       - display: true
         heading: Website
@@ -45,14 +46,6 @@ contact:
         heading: Resume
         legible: git.io/vBqTk
         href: http://git.io/vBqTk
-
-# email: me@peterhenry.net
-# phone: 817-657-9341
-# skype: peter.henry7
-# website: peterhenry.net
-# github_username: github.com/mosbasik
-# linkedin_custom_url: linkedin.com/in/peterhenry7
-# resume_url: http://git.io/vBqTk
 
 # Leading section
 intro:

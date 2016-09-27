@@ -37,22 +37,22 @@
               <h2>{{ resume.contact.heading }}</h2>
             </header>
             <address>
-              <table>
+              <ul>
                 {% for item in resume.contact.body %}
                   {% if item.display %}
-                    <tr>
-                      <td>{{ item.heading }}</td>
-                      <td>
+                    <li class="dot-leader">
+                      <span>{{ item.heading }}</span>
+                      <span>
                         {% if item.href %}
                           <a href="{{ item.href }}" target="_blank">{{ item.legible }}</a>
                         {% else %}
                           {{ item.legible }}
                         {% endif %}
-                      </td>
-                    </tr>
+                      </span>
+                    </li>
                   {% endif %}
                 {% endfor %}
-              </table>
+              </ul>
             </address>
           </section>
         {% endif %}
@@ -95,8 +95,9 @@
             </header>
             {% for project in resume.projects.body %}
               <article role="article">
-                <header role="heading">
-                  <a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a> - {{ project.time }}.
+                <header role="heading" class="dot-leader">
+                  <span><a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a></span>
+                  <span>{{ project.time }}</span>
                 </header>
                 {{ project.body | markdownify }}
               </article>
