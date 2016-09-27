@@ -17,7 +17,7 @@ contact:
       icon: ''
 
     phone:
-      heading: Cell
+      heading: Phone
       number:
         display: (817) 657-9341
         raw: 8176579341
@@ -113,7 +113,7 @@ skills:
 # List of programming projects
 projects:
   display: true # set as false if you don't want to render this section
-  heading: Projects
+  heading: Personal Projects
   body:
 
     - url: mosbasik.github.io/skillfarming
@@ -130,7 +130,7 @@ projects:
 
         Adds significantly more granular order sorting/searching capability and more accurate input validation
 
-        Interfaces with the Eve Online API and certain third-party crowdsourced datasets not distributed officially
+        Interfaces with the Eve Online API and certain crowdsourced datasets not distributed officially
 
         Backend is Python/Django and SQLite3; frontend is HTML/CSS, Javascript/jQuery and Bootstrap
 
@@ -141,7 +141,7 @@ projects:
 
         Users select an arbitrarily large set of movies that they are personally interested in watching
 
-        Aggregates of users’ movie selections are used to figure out movies that arbitrary user groups want to watch
+        Aggregates of users' movie selections are used to figure out movies that arbitrary user groups want to watch
 
         Interfaces with the IMDB dataset via the OmniDB API
 
@@ -232,7 +232,7 @@ work:
         Enforce disciplinary measures where appropriate, and track offenses for future reference
 
 # List of relevent coursework
-work:
+coursework:
   display: true # set as false if you don't want to render this section
   heading: Coursework/Miniprojects
   body:

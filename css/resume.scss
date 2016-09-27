@@ -67,7 +67,23 @@
     padding-right: 10px;
     &:last-of-type {
       padding-right: 0px;
-      // margin-bottom: 0px;
+    }
+
+    // for each section, indent all but the first *immediate* children
+    // &>:nth-child(n+2) {
+    //   padding-left: .75em;
+    // }
+
+    // indent everything but the headers of sections and articles
+    &>:not(header), & article>:not(header) {
+      padding-left: .5em;
+    }
+
+    & article {
+      margin-bottom: .5em;
+      header {
+        font-style: italic;
+      }
     }
   }
 

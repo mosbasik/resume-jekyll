@@ -25,9 +25,11 @@
     <main role="main">
       <article role="article" class="grid">
 
-        <header role="heading" class="section-name">
-          <h1>{{ resume.name }}</h1>
-        </header>
+        <section class="section-name">
+          <header role="heading">
+            <h1>{{ resume.name }}</h1>
+          </header>
+        </section>
 
         <section class="section-{{ resume.contact.heading | slugify }}">
           <header role="heading">
@@ -99,7 +101,7 @@
             {% for project in resume.projects.body %}
               <article role="article">
                 <header role="heading">
-                  <a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a>. {{ project.time }}.
+                  <a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a> - {{ project.time }}.
                 </header>
                 {{ project.body | markdownify }}
               </article>
@@ -115,7 +117,7 @@
               {% for work in resume.work.body %}
                 <article role="article">
                   <header role="heading">
-                    {{ work.title }}. {{ work.time }}.
+                    {{ work.title }} - {{ work.time }}.
                   </header>
                   {{ work.body | markdownify }}
                 </article>
@@ -131,7 +133,7 @@
               {% for coursework in resume.coursework.body %}
                 <article role="article">
                   <header role="heading">
-                    {{ coursework.title }}. {{ coursework.time }}.
+                    {{ coursework.title }} - {{ coursework.time }}.
                   </header>
                   {{ coursework.body | markdownify }}
                 </article>
