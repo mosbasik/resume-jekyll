@@ -23,11 +23,6 @@ contact:
         href: tel:8176579341
 
       - display: true
-        heading: Skype
-        legible: peter.henry7
-        href: skype:peter.henry7?chat
-
-      - display: true
         heading: Website
         legible: peterhenry.net
         href: http://www.peterhenry.net/
@@ -43,9 +38,16 @@ contact:
         href: https://www.linkedin.com/in/peterhenry7/
 
       - display: true
+        heading: Skype
+        legible: peter.henry7
+        href: skype:peter.henry7?chat
+
+      - display: true
         heading: Resume
-        legible: git.io/vBqTk
-        href: http://git.io/vBqTk
+        # legible: git.io/vBqTk
+        # href: http://git.io/vBqTk
+        legible: peterhenry.net/resume
+        href: http://www.peterhenry.net/resume/
 
 # Leading section
 intro:
@@ -97,168 +99,172 @@ skills:
     - MS Office
     - Adobe CS
 
-# List of programming projects
-projects:
-  display: true # set as false if you don't want to render this section
-  heading: Personal Projects
-  body:
+# long form information blocks
+infosections:
 
-    - url: mosbasik.github.io/skillfarming
-      time: In development
-      body: |
-        Single-page app that determines the realtime profitability of farming skillpoints in Eve Online
+  # List of programming projects
+  - display: true # set as false if you don't want to render this section
+    heading: Personal Projects
+    body:
 
-        Simple project to become more familiar with Vue.js, a minimal JavaScript framework
+      - display: true
+        legible: mosbasik.github.io/skillfarming
+        href: https://mosbasik.github.io/skillfarming/
+        time: In development
+        body:
+          - Single-page app that determines the realtime profitability of farming skillpoints in Eve Online
+          - Simple project to become more familiar with Vue.js, a minimal JavaScript framework
 
-    - url: whsales.peterhenry.net
-      time: Summer 2015
-      body: |
-        Rewrite/update of existing website used by Eve Online players to publically post wormhole sale listings
+      - display: true
+        legible: whsales.peterhenry.net
+        href: http://whsales.peterhenry.net/
+        time: Jul 2015
+        body:
+          - Rewrite/update of existing website used by Eve Online players to publically post wormhole sale listings
+          - Adds significantly more granular order sorting/searching capability and more accurate input validation
+          - Interfaces with the Eve Online API and certain crowdsourced datasets not distributed officially
+          - Backend is Python/Django and SQLite3; frontend is HTML/CSS, Javascript/jQuery and Bootstrap
 
-        Adds significantly more granular order sorting/searching capability and more accurate input validation
+      - display: true
+        legible: moviepicker.peterhenry.net
+        href: http://moviepicker.peterhenry.net/
+        time: Jul 2015
+        body:
+          - Webapp designed to answer the question "What should we watch tonight?
+          - Users select an arbitrarily large set of movies that they are personally interested in watching
+          - Aggregates of users' movie selections are used to figure out movies that arbitrary user groups want to watch
+          - Interfaces with the IMDB dataset via the OmniDB API
+          - Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
 
-        Interfaces with the Eve Online API and certain crowdsourced datasets not distributed officially
+      - display: true
+        legible: github.com/mosbasik/rvagaming
+        href: https://github.com/mosbasik/rvagaming
+        time: Jul 2012 to Jul 2014
+        body:
+          - Website to track small group of gamers
+          - Database of users, account handles and alternate accounts powered by Facebook/Steam public APIs
+          - Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
+          - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
+          - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
 
-        Backend is Python/Django and SQLite3; frontend is HTML/CSS, Javascript/jQuery and Bootstrap
+  # List of work experience
+  - display: true # set as false if you don't want to render this section
+    heading: Work Experience
+    body:
 
-    - url: moviepicker.peterhenry.net
-      time: Summer 2015
-      body: |
-        Webapp designed to answer the question "What should we watch tonight?
+      - display: true
+        legible: Belk
+        href: https://www.belk.com/
+        title: Stocker (Temp through CornerStone Staffing)
+        time: Feb 2016 - Mar 2016
+        body:
+          - Process daily shipments and perform weekly inventories of stockroom and display counters
+          - Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
+          - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
 
-        Users select an arbitrarily large set of movies that they are personally interested in watching
+      - display: true
+        legible: Tarrant County
+        href: http://access.tarrantcounty.com/en/elections.html
+        title: Poll Worker
+        time: Nov 2015
+        body:
+          - Set up / dismantle Election Day equipment at local polling place
+          - Assist voters with the voting process and ensure proper procedures are followed
 
-        Aggregates of users' movie selections are used to figure out movies that arbitrary user groups want to watch
+      - display: true
+        legible: Caltech
+        href: https://www.imss.caltech.edu/node/279
+        title: Information Management Systems & Services Rep
+        time: Jun 2013 - Jun 2015
+        body:
+          - Configure, secure, and maintain CentOS server belonging to a Caltech undergraduate residence
+          - Maintain house network, machines and printers
+          - Provide computer/network assistance to house members
 
-        Interfaces with the IMDB dataset via the OmniDB API
+      - display: true
+        legible: Ricketts House
+        href: http://ricketts.caltech.edu/
+        title: Vice President
+        time: Feb 2014 - Feb 2015
+        body:
+          - Housing assignments coordinator for a Caltech undergraduate residence
+          - Liaison between administrative staff and undergraduates
+          - House events and logistics manager (inventory, purchasing, cleanup)
 
-        Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
+      - display: true
+        legible: The Seed Company
+        href: https://theseedcompany.org/
+        title: IT Intern
+        time: Jul 2012 - Sep 2012
+        body:
+          - Migrate local/overseas email accounts and data to new MS Exchange server
+          - Contact employees to schedule migrations/maintain migration priority rosters
+          - Document problems/unusual cases and write tutorials for company wiki (Mac/Linux migrations, etc)
+          - Securely wipe and reconfigure used hardware for resale
 
-    - url: github.com/mosbasik/rvagaming
-      time: Summer 2012 to Summer 2014
-      body: |
-        Website to track small group of gamers
+      - display: true
+        legible: Covenant Church Colleyville
+        href: http://www.covenantcolleyville.org/
+        title: Media Team Member
+        time: Jul 2011 - Present
+        body:
+          - Maintain internally consistent and easily searchable persistent media library
+          - Coordinate with presenters regarding new material they intend to show
+          - Provide the audience with undistracting high-quality audio and visuals
 
-        Database of users, account handles and alternate accounts powered by Facebook and Steam public APIs
+      - display: true
+        legible: Rift Valley Academy "Senior Store" Fundraising
+        href: http://rva.org/
+        title: Job Coordinator
+        time: Sep 2010 - Jul 2011
+        body:
+          - Develop and maintain database of eligible students by coordinating with class sponsors, coaches, and teachers
+          - Track work histories to ensure reasonable hours and reassign under-performing students to better fitting jobs
+          - Generate and distribute assignment rosters to student managers and class sponsors
+          - Enforce disciplinary measures where appropriate, and track offenses for future reference
 
-        Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
+  # List of relevent coursework
+  - display: true # set as false if you don't want to render this section
+    heading: Coursework/Miniprojects
+    body:
 
-        Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
+      - display: true
+        legible: CS/CNS/EE 156a and 156b - Learning Systems (Python, C++)
+        time: 2014
+        body:
+          - Work on the "Netflix Prize" machine learning problem
 
-        Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
+      - display: true
+        legible: CS/EE 144 - The Ideas Behind Our Networked World (Python)
+        time: 2013
+        body:
+          - PageRank calculation of large graphs using Amazon Elastic MapReduce
 
-# List of work experience
-work:
-  display: true # set as false if you don't want to render this section
-  heading: Work Experience
-  body:
+      - display: true
+        legible: CS 115 - Functional Programming (Haskell)
+        time: 2012
+        body:
+          - '"Sudoku" solver'
+          - S-expression and XML parsers
 
-    - title: Belk Department Store Stocker (Temp through CornerStone Staffing)
-      time: February 2016 through March 2016
-      body: |
-        Process daily shipments and perform weekly inventories of stockroom and display counters
+      - display: true
+        legible: CS 24 - Introduction to Computing Systems (C, IA32)
+        time: 2012
+        body:
+          - Explicit heap memory allocator/deallocator
+          - Cache simulator, and cache-optimized matrix transpose function
+          - System-level multithreading scheduler with timer interrupts for greedy threads
+          - Virtual pagefile and memory system using a number of page replacement policies
+          - Proof-of-concept virtual-kernel root exploit
 
-        Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
+      - display: true
+        legible: CS 4 - Fundamentals of Computer Programming (Scheme/Racket)
+        time: 2011
+        body:
+          - Differential equation solver using higher-order functions
 
-        Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
-
-    - title: Tarrant County Poll Worker
-      time: November 2015
-      body: |
-        Set up / dismantle Election Day equipment at local polling place
-
-        Assist voters with the voting process and ensure proper procedures are followed
-
-    - title: Ricketts Information Management Systems & Services Representative
-      time: Summer 2013 to Summer 2015
-      body: |
-        Configure, secure, and maintain CentOS server belonging to a Caltech undergraduate residence
-
-        Maintain house network, machines and printers
-
-        Provide computer/network assistance to house members
-
-    - title: Ricketts Vice President
-      time: February 2014 to February 2015
-      body: |
-        Housing assignments coordinator for a Caltech undergraduate residence
-
-        Liaison between administrative staff and undergraduates
-
-        House events and logistics manager (inventory, purchasing, cleanup)
-
-    - title: IT Intern for The Seed Company
-      time: Summer 2012
-      body: |
-        Migrate local/overseas email accounts and data to new MS Exchange server
-
-        Contact employees to schedule migrations/maintain migration priority rosters
-
-        Document problems/unusual cases and write tutorials for company wiki (Mac/Linux migrations, etc)
-
-        Securely wipe and reconfigure used hardware for resale
-
-    - title: Media Team Member for Covenant Church Colleyville
-      time: Summer 2011 to present
-      body: |
-        Maintain internally consistent and easily searchable persistent media library
-
-        Coordinate with presenters regarding new material they intend to show
-
-        Provide the audience with undistracting high-quality audio and visuals
-
-    - title: Job Coordinator for Rift Valley Academy Class of ‘11 "Senior Store" Fundraising Program
-      time: 2010-2011
-      body: |
-        Develop and maintain database of eligible students by coordinating with class sponsors, coaches, and teachers
-
-        Track work histories to ensure reasonable hours and reassign under-performing students to better fitting jobs
-
-        Generate and distribute assignment rosters to student managers and class sponsors
-
-        Enforce disciplinary measures where appropriate, and track offenses for future reference
-
-# List of relevent coursework
-coursework:
-  display: true # set as false if you don't want to render this section
-  heading: Coursework/Miniprojects
-  body:
-
-    - title: CS/CNS/EE 156a and 156b - Learning Systems (Python, C++)
-      time: 2014
-      body: |
-        Work on the "Netflix Prize" machine learning problem
-
-    - title: CS/EE 144 - The Ideas Behind Our Networked World (Python)
-      time: 2013
-      body: |
-        PageRank calculation of large graphs using Amazon Elastic MapReduce
-
-    - title: CS 115 - Functional Programming (Haskell)
-      time: 2012
-      body: |
-        "Sudoku" solver
-
-        S-expression and XML parsers
-
-    - title: CS 24 - Introduction to Computing Systems (C, IA32)
-      time: 2012
-      body: |
-        Explicit heap memory allocator/deallocator
-
-        Cache simulator, and cache-optimized matrix transpose function
-
-        System-level multithreading scheduler with timer interrupts for greedy threads
-
-        Virtual pagefile and memory system using a number of page replacement policies
-
-        Proof-of-concept virtual-kernel root exploit
-
-    - title: CS 4 - Fundamentals of Computer Programming (Scheme/Racket)
-      time: 2011
-      body: Differential equation solver using higher-order functions
-
-    - title: CS 2 - Introduction to Programming Methods (Java, Python, C++)
-      time: 2011
-      body: |
-        "Reversi" heuristic AI
+      - display: true
+        legible: CS 2 - Introduction to Programming Methods (Java, Python, C++)
+        time: 2011
+        body:
+          - '"Reversi" heuristic AI'

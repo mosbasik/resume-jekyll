@@ -107,13 +107,14 @@ a {
 
     // indent everything but the headers of sections and articles
     &>:not(header), & article>:not(header) {
-      padding-left: .5em;
+      padding-left: 1em;
     }
 
     & article {
-      margin-bottom: .5em;
+      margin-bottom: 1em;
       header {
         font-style: italic;
+        font-weight: bold;
       }
     }
   }

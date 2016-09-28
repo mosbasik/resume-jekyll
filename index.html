@@ -88,54 +88,41 @@
           </section>
         {% endif %}
 
-        {% if resume.projects.display %}
-          <section class="section-{{ resume.projects.heading | slugify }}">
-            <header role="heading">
-              <h2>{{ resume.projects.heading }}</h2>
-            </header>
-            {% for project in resume.projects.body %}
-              <article role="article">
-                <header role="heading" class="dot-leader">
-                  <span><a href="http://{{ project.url }}" target="_blank">{{ project.url }}</a></span>
-                  <span>{{ project.time }}</span>
-                </header>
-                {{ project.body | markdownify }}
-              </article>
-            {% endfor %}
-          </section>
-        {% endif %}
-
-        {% if resume.work.display %}
-          <section class="section-{{ resume.work.heading | slugify }}">
-            <header role="heading">
-              <h2>{{ resume.work.heading }}</h2>
-            </header>
-              {% for work in resume.work.body %}
-                <article role="article">
-                  <header role="heading">
-                    {{ work.title }} - {{ work.time }}.
-                  </header>
-                  {{ work.body | markdownify }}
-                </article>
+        {% for infosection in resume.infosections %}
+          {% if infosection.display %}
+            <section class="section-{{ infosection.heading | slugify }}">
+              <header role="heading">
+                <h2>{{ infosection.heading }}</h2>
+              </header>
+              {% for item in infosection.body %}
+                {% if item.display %}
+                  <article role="article">
+                    <header role="heading" class="dot-leader">
+                      <span>
+                        {% if item.href %}
+                          <a href="{{ item.href }}" target="_blank">{{ item.legible}}</a>
+                        {% else %}
+                          {{ item.legible }}
+                        {% endif %}
+                        {% if item.title %}
+                          ⚫ {{ item.title }}
+                        {% endif %}
+                      </span>
+                      <span>
+                        {{ item.time }}
+                      </span>
+                    </header>
+                    <ul>
+                      {% for bullet in item.body %}
+                        <li>{{ bullet }}</li>
+                      {% endfor %}
+                    </ul>
+                  </article>
+                {% endif %}
               {% endfor %}
-          </section>
-        {% endif %}
-
-        {% if resume.coursework.display %}
-          <section class="section-{{ resume.coursework.heading | slugify }}">
-            <header role="heading">
-              <h2>{{ resume.coursework.heading }}</h2>
-            </header>
-              {% for coursework in resume.coursework.body %}
-                <article role="article">
-                  <header role="heading">
-                    {{ coursework.title }} - {{ coursework.time }}.
-                  </header>
-                  {{ coursework.body | markdownify }}
-                </article>
-              {% endfor %}
-          </section>
-        {% endif %}
+            </section>
+          {% endif %}
+        {% endfor %}
       </article>
     </main>
   </body>
