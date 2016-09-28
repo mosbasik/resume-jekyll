@@ -43,7 +43,7 @@ contact:
         href: skype:peter.henry7?chat
 
       - display: true
-        heading: Resume
+        heading: Online Resume
         # legible: git.io/vBqTk
         # href: http://git.io/vBqTk
         legible: peterhenry.net/resume
@@ -213,7 +213,7 @@ infosections:
           - Provide the audience with undistracting high-quality audio and visuals
 
       - display: true
-        legible: Rift Valley Academy "Senior Store" Fundraising
+        legible: Rift Valley Academy Class Fundraising
         href: http://rva.org/
         title: Job Coordinator
         time: Sep 2010 - Jul 2011

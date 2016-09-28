@@ -64,121 +64,150 @@ a {
 }
 
 
-@media screen and (min-width: 480px) {
+body {
+  background-color: {{ site.color }};
+}
 
-  body {
-    background-color: {{ site.color }};
+main {
+  background-color: white;
+  font-family: 'Computer Modern Serif', serif;
+  font-size: 12pt;
+  max-width: 960px;
+  // width: 760px;
+  margin: 0 auto;
+  padding: 1in;
+  hyphens: auto;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+// basic formatting for all sections
+[class*='section-'] {
+  width: 100%;
+  margin-bottom: 1em;
+  float: left;
+  padding-right: 10px;
+  &:last-of-type {
+    padding-right: 0px;
   }
 
-  main {
-    background-color: white;
-    font-family: 'Computer Modern Serif', serif;
-    font-size: 12pt;
-    width: 960px;
-    // width: 760px;
-    margin: 0 auto;
-    padding: 1in;
-    hyphens: auto;
+  // indent everything but the headers of sections and articles
+  &>:not(header), & article>:not(header) {
+    padding-left: 1em;
   }
 
-  h1 {
-    font-size: 3em;
-    font-weight: bold;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-
-  // basic formatting for all sections
-  [class*='section-'] {
+  & article {
     margin-bottom: 1em;
-    float: left;
-    padding-right: 10px;
-    &:last-of-type {
-      padding-right: 0px;
-    }
-
-    // for each section, indent all but the first *immediate* children
-    // &>:nth-child(n+2) {
-    //   padding-left: .75em;
-    // }
-
-    // indent everything but the headers of sections and articles
-    &>:not(header), & article>:not(header) {
-      padding-left: 1em;
-    }
-
-    & article {
-      margin-bottom: 1em;
-      header {
-        font-style: italic;
-        font-weight: bold;
-      }
+    header {
+      font-style: italic;
+      font-weight: bold;
     }
   }
+}
 
-  // expand parent of grid to contain all children
-  .grid:after {
-    content: "";
-    display: table;
-    clear: both;
+// expand parent of grid to contain all children
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section-name {
+  width: 100%;
+  background-color: red;
+}
+
+.section-{{ site.data.resume.contact.heading | slugify }} {
+  float: right;
+  width: 41%;
+  background-color: orange;
+}
+
+.section-{{ site.data.resume.intro.heading | slugify }} {
+  width: 59%;
+  background-color: yellow;
+}
+
+.section-{{ site.data.resume.education.heading | slugify }} {
+  width: 59%;
+  background-color: green;
+}
+
+.section-{{ site.data.resume.skills.heading | slugify }} {
+  width: 100%;
+  background-color: blue;
+  ul {
+    -moz-column-count: 5;
+    -moz-column-gap: 3em;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 3em;
+    column-count: 5;
+    column-gap: 3em;
   }
+}
 
-  .section-name {
-    width: 100%;
-    background-color: red;
+// Different screen sizes:
+
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0.5in;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 0.1in;
   }
 
   .section-{{ site.data.resume.contact.heading | slugify }} {
-    float: right;
-    width: 41%;
-    background-color: orange;
-  }
-
-  .section-{{ site.data.resume.intro.heading | slugify }} {
-    width: 59%;
-    background-color: yellow;
-  }
-
-  .section-{{ site.data.resume.education.heading | slugify }} {
-    width: 59%;
-    background-color: green;
-  }
-
-  .section-{{ site.data.resume.skills.heading | slugify }} {
+    float: left;
     width: 100%;
-    background-color: blue;
-    ul {
+  }
+  .section-{{ site.data.resume.intro.heading | slugify }} {
+    width: 100%;
+  }
+  .section-{{ site.data.resume.education.heading | slugify }} {
+    width: 100%;
+  }
+}
 
-      -moz-column-count: 5;
+@media screen and (max-width: 768px) {
+  .section-{{ site.data.resume.skills.heading | slugify }} {
+    ul {
+      -moz-column-count: 4;
       -moz-column-gap: 3em;
-      -webkit-column-count: 5;
+      -webkit-column-count: 4;
       -webkit-column-gap: 3em;
-      column-count: 5;
+      column-count: 4;
       column-gap: 3em;
     }
   }
+}
 
-  .section-{{ site.data.resume.projects.heading | slugify }} {
-    width: 100%;
-    background-color: indigo;
+@media print {
+  @page {
+    margin: 1in;
   }
-
-  .section-{{ site.data.resume.work.heading | slugify }} {
-    width: 100%;
-    background-color: purple;
-  }
-
-  .section-{{ site.data.resume.coursework.heading | slugify }} {
-    width: 100%;
-    background-color: violet;
-  }
-
-  [class*='section-'] {
+  body {
     background-color: white;
   }
-
-
+  main {
+    font-size: 9.5pt;
+    padding: 0;
+  }
 }
+
+
+[class*='section-'] {
+  background-color: white;
+}
+
+
