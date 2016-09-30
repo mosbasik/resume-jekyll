@@ -156,9 +156,29 @@ h2 {
 
 // Different screen sizes:
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 958px) {
   main {
     padding: 0.5in;
+  }
+
+  .section-{{ site.data.resume.contact.heading | slugify }} {
+    float: left;
+    width: 100%;
+
+    ul {
+      -moz-column-count: 2;
+      -moz-column-gap: 2em;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 2em;
+      column-count: 2;
+      column-gap: 2em;
+    }
+  }
+  .section-{{ site.data.resume.intro.heading | slugify }} {
+    width: 50%;
+  }
+  .section-{{ site.data.resume.education.heading | slugify }} {
+    width: 50%;
   }
 }
 
@@ -188,6 +208,19 @@ h2 {
       -webkit-column-gap: 3em;
       column-count: 4;
       column-gap: 3em;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .section-{{ site.data.resume.contact.heading | slugify }} {
+    ul {
+      -moz-column-count: 1;
+      -moz-column-gap: 0em;
+      -webkit-column-count: 1;
+      -webkit-column-gap: 0em;
+      column-count: 1;
+      column-gap: 0em;
     }
   }
 }

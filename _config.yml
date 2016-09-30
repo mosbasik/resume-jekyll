@@ -26,4 +26,4 @@ kramdown:
 sass:
   sass_dir: _sass
 
-color: white;
+color: white
