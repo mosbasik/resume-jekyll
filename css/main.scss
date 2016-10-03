@@ -41,7 +41,6 @@ a {
 
 // dot leaders:
 // http://stackoverflow.com/a/25212853/2128530
-// li {
 .dot-leader {
   // display: block;
   clear: both;
@@ -60,6 +59,18 @@ a {
     content: "········································································································································";
     display: block;
     overflow: hidden;
+  }
+}
+
+
+// styling section unordered lists
+section article {
+  ul > li {
+    // text-indent: -5px;
+    text-indent: -10px;
+  }
+  ul > li:before {
+    content: "- ";
   }
 }
 
@@ -113,6 +124,14 @@ h2 {
   }
 }
 
+// infosection heading styling
+section article header {
+  span:nth-of-type(n+2):before {
+    content: "•";
+  }
+}
+
+
 // expand parent of grid to contain all children
 .grid:after {
   content: "";
@@ -154,13 +173,22 @@ h2 {
   }
 }
 
-// Different screen sizes:
 
+
+// Customization for smaller screen sizes:
+//-----------------------------------------------------------------------------
+
+
+
+// reduce the margin to half an inch
 @media screen and (max-width: 958px) {
   main {
     padding: 0.5in;
   }
+}
 
+// make contact info into two columns, and make intro and education full-width
+@media screen and (max-width: 860px) {
   .section-{{ site.data.resume.contact.heading | slugify }} {
     float: left;
     width: 100%;
@@ -175,31 +203,37 @@ h2 {
     }
   }
   .section-{{ site.data.resume.intro.heading | slugify }} {
-    width: 50%;
+    width: 100%;
   }
   .section-{{ site.data.resume.education.heading | slugify }} {
-    width: 50%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  main {
-    padding: 0.1in;
+// stack work info header elements vertically
+@media screen and (max-width: 808px) {
+  section article header {
+    span {
+      display: block;
+    }
+    span:nth-of-type(n+2):before {
+     content: none;
+    }
   }
+}
 
+// make contact into one column and make skills into four columns
+@media screen and (max-width: 732px) {
   .section-{{ site.data.resume.contact.heading | slugify }} {
-    float: left;
-    width: 100%;
+    ul {
+      -moz-column-count: 1;
+      -moz-column-gap: 0em;
+      -webkit-column-count: 1;
+      -webkit-column-gap: 0em;
+      column-count: 1;
+      column-gap: 0em;
+    }
   }
-  .section-{{ site.data.resume.intro.heading | slugify }} {
-    width: 100%;
-  }
-  .section-{{ site.data.resume.education.heading | slugify }} {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .section-{{ site.data.resume.skills.heading | slugify }} {
     ul {
       -moz-column-count: 4;
@@ -212,19 +246,47 @@ h2 {
   }
 }
 
-@media screen and (max-width: 660px) {
-  .section-{{ site.data.resume.contact.heading | slugify }} {
+// make skills into three columns and narrow their width
+@media screen and (max-width: 576px) {
+  .section-{{ site.data.resume.skills.heading | slugify }} {
     ul {
-      -moz-column-count: 1;
-      -moz-column-gap: 0em;
-      -webkit-column-count: 1;
-      -webkit-column-gap: 0em;
-      column-count: 1;
-      column-gap: 0em;
+      -moz-column-count: 3;
+      -moz-column-gap: 2em;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 2em;
+      column-count: 3;
+      column-gap: 2em;
     }
   }
 }
 
+// drop the margin to a tenth of an inch
+@media screen and (max-width: 450px) {
+  main {
+    padding: 0.1in;
+  }
+}
+
+// drop font size of contact info, make skills into two columns
+@media screen and (max-width: 330px) {
+  .section-{{ site.data.resume.contact.heading | slugify }} {
+    .dot-leader span:last-child {
+      font-size: .9em;
+    }
+  }
+  .section-{{ site.data.resume.skills.heading | slugify }} {
+    ul {
+      -moz-column-count: 2;
+      -moz-column-gap: 3em;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 3em;
+      column-count: 2;
+      column-gap: 3em;
+    }
+  }
+}
+
+// styling for a printed page
 @media print {
   @page {
     margin: 1in;
@@ -242,5 +304,3 @@ h2 {
 [class*='section-'] {
   background-color: white;
 }
-
-

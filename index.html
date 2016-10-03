@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <!--[if IE]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -97,20 +99,24 @@
               {% for item in infosection.body %}
                 {% if item.display %}
                   <article role="article">
-                    <header role="heading" class="dot-leader">
-                      <span>
+                    <header role="heading">
+                      <span class="main">
                         {% if item.href %}
                           <a href="{{ item.href }}" target="_blank">{{ item.legible}}</a>
                         {% else %}
                           {{ item.legible }}
                         {% endif %}
-                        {% if item.title %}
-                          ⚫ {{ item.title }}
-                        {% endif %}
                       </span>
-                      <span>
-                        {{ item.time }}
-                      </span>
+                      {% if item.title %}
+                        <span class="title">
+                          {{ item.title }}
+                        </span>
+                      {% endif %}
+                      {% if item.time %}
+                        <span class="time">
+                          {{ item.time }}
+                        </span>
+                      {% endif %}
                     </header>
                     <ul>
                       {% for bullet in item.body %}
