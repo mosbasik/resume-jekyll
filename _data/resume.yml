@@ -104,26 +104,34 @@ infosections:
 
   # List of programming projects
   - display: true # set as false if you don't want to render this section
-    heading: Personal Projects
+    heading: Projects
     body:
+
+      - display: true
+        legible: mosbasik.github.io/exhaleheb
+        href: https://mosbasik.github.io/exhaleheb/
+        time: In Progress
+        body:
+          - Organizational site / posting platform for a discussion group organized by family members
+          - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
 
       - display: true
         legible: mosbasik.github.io/skillfarming
         href: https://mosbasik.github.io/skillfarming/
-        time: In development
+        time: Aug 2016
         body:
           - Single-page app that determines the realtime profitability of farming skillpoints in Eve Online
-          - Simple project to become more familiar with Vue.js, a minimal JavaScript framework
+          - Small project to become more familiar with Vue.js, a minimal JavaScript framework
 
       - display: true
         legible: whsales.peterhenry.net
         href: http://whsales.peterhenry.net/
         time: Jul 2015
         body:
-          - Rewrite/update of existing website used by Eve Online players to publically post wormhole sale listings
+          - Rewrite of existing website used by Eve Online players to post wormhole sale listings
           - Adds significantly more granular order sorting/searching capability and more accurate input validation
           - Interfaces with the Eve Online API and certain crowdsourced datasets not distributed officially
-          - Backend is Python/Django and SQLite3; frontend is HTML/CSS, Javascript/jQuery and Bootstrap
+          - Backend is Django and SQLite3; frontend is HTML/CSS, JS/jQuery and Bootstrap
 
       - display: true
         legible: moviepicker.peterhenry.net
@@ -132,20 +140,20 @@ infosections:
         body:
           - Webapp designed to answer the question "What should we watch tonight?
           - Users select an arbitrarily large set of movies that they are personally interested in watching
-          - Aggregates of users' movie selections are used to figure out movies that arbitrary user groups want to watch
-          - Interfaces with the IMDB dataset via the OmniDB API
-          - Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
+          - Aggregates of user movie selections are used to display movies that subsets of users want to watch
+          - Uses IMDB dataset via the OmniDB API, as well as Django, SQLite3, JS/jQuery and Bootstrap
+          # - Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
 
       - display: true
         legible: github.com/mosbasik/rvagaming
         href: https://github.com/mosbasik/rvagaming
         time: Jul 2012 to Jul 2014
         body:
-          - Website to track small group of gamers
+          - Website for group of gamers from my high school, written in Python, PHP and MySQL
           - Database of users, account handles and alternate accounts powered by Facebook/Steam public APIs
           - Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
-          - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
-          - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
+          # - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
+          # - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
 
   # List of work experience
   - display: true # set as false if you don't want to render this section
@@ -178,18 +186,8 @@ infosections:
         time: Jun 2013 - Jun 2015
         body:
           - Configure, secure, and maintain CentOS server belonging to a Caltech undergraduate residence
-          - Maintain house network, machines and printers
+          - Maintain house network, machines and printers and recommend purchases
           - Provide computer/network assistance to house members
-
-      - display: true
-        legible: Ricketts House
-        href: http://ricketts.caltech.edu/
-        title: Vice President
-        time: Feb 2014 - Feb 2015
-        body:
-          - Housing assignments coordinator for a Caltech undergraduate residence
-          - Liaison between administrative staff and undergraduates
-          - House events and logistics manager (inventory, purchasing, cleanup)
 
       - display: true
         legible: The Seed Company
@@ -201,6 +199,21 @@ infosections:
           - Contact employees to schedule migrations/maintain migration priority rosters
           - Document problems/unusual cases and write tutorials for company wiki (Mac/Linux migrations, etc)
           - Securely wipe and reconfigure used hardware for resale
+
+  # List of volunteer positions
+  - display: true
+    heading: Volunteer Experience
+    body:
+
+      - display: true
+        legible: Ricketts House
+        href: http://ricketts.caltech.edu/
+        title: Vice President
+        time: Feb 2014 - Feb 2015
+        body:
+          - Housing assignments coordinator for a Caltech undergraduate residence
+          - Liaison between administrative staff and undergraduates
+          - House events and logistics manager (inventory, purchasing, cleanup)
 
       - display: true
         legible: Covenant Church Colleyville
@@ -218,10 +231,10 @@ infosections:
         title: Job Coordinator
         time: Sep 2010 - Jul 2011
         body:
-          - Develop and maintain database of eligible students by coordinating with class sponsors, coaches, and teachers
-          - Track work histories to ensure reasonable hours and reassign under-performing students to better fitting jobs
+          - Develop/maintain database of workers by coordinating with class sponsors, coaches, and teachers
+          - Track work histories to ensure reasonable hours and tweak schedules of under-performing students
           - Generate and distribute assignment rosters to student managers and class sponsors
-          - Enforce disciplinary measures where appropriate, and track offenses for future reference
+          # - Enforce disciplinary measures where appropriate, and track offenses for future reference
 
   # List of relevent coursework
   - display: true # set as false if you don't want to render this section
@@ -229,26 +242,39 @@ infosections:
     body:
 
       - display: true
-        legible: CS/CNS/EE 156a and 156b - Learning Systems (Python, C++)
+        legible: Coding Campus - Full Stack Web Development (Python, JavaScript)
+        href: http://vschool.io/en/?cc_redirect=true
+        time: 2015
+        body:
+          - Three month full-time on-site programming bootcamp with focus on web development
+          - Example topics include database organization, AJAX, REST APIs, unit testing, Agile strategies
+          - Brainstorm, architect, implement and deploy 3 full projects
+
+      - display: true
+        legible: Caltech CS/CNS/EE 156a and 156b - Learning From Data (Python, C++)
+        href: http://work.caltech.edu/telecourse.html
         time: 2014
         body:
           - Work on the "Netflix Prize" machine learning problem
 
       - display: true
-        legible: CS/EE 144 - The Ideas Behind Our Networked World (Python)
+        legible: Caltech CS/EE 144 - The Ideas Behind Our Networked World (Python)
+        href: http://courses.cms.caltech.edu/cs144/
         time: 2013
         body:
           - PageRank calculation of large graphs using Amazon Elastic MapReduce
 
       - display: true
-        legible: CS 115 - Functional Programming (Haskell)
+        legible: Caltech CS 115 - Functional Programming (Haskell)
+        href: http://www.cms.caltech.edu/academics/course_desc#cs
         time: 2012
         body:
           - '"Sudoku" solver'
           - S-expression and XML parsers
 
       - display: true
-        legible: CS 24 - Introduction to Computing Systems (C, IA32)
+        legible: Caltech CS 24 - Introduction to Computing Systems (C, IA32)
+        href: http://courses.cms.caltech.edu/cs24/
         time: 2012
         body:
           - Explicit heap memory allocator/deallocator
@@ -258,13 +284,15 @@ infosections:
           - Proof-of-concept virtual-kernel root exploit
 
       - display: true
-        legible: CS 4 - Fundamentals of Computer Programming (Scheme/Racket)
+        legible: Caltech CS 4 - Fundamentals of Computer Programming (Scheme/Racket)
+        href: http://users.cms.caltech.edu/~mvanier/cs4/Winter2016/
         time: 2011
         body:
           - Differential equation solver using higher-order functions
 
       - display: true
-        legible: CS 2 - Introduction to Programming Methods (Java, Python, C++)
+        legible: Caltech CS 2 - Introduction to Programming Methods (Java, Python, C++)
+        href: http://www.cms.caltech.edu/academics/course_desc#cs
         time: 2011
         body:
           - '"Reversi" heuristic AI'
