@@ -54,7 +54,7 @@ intro:
   display: true # set as false if you don't want to render this section
   heading: Objective # "Summary" is another common opener
   body: |
-    Seeking an information technology internship/co-op position to gain
+    Seeking an information technology internship or co-op position to gain
     experience in applied computer science, system analysis/administration, or
     application development.
 
@@ -171,7 +171,7 @@ infosections:
           - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
 
       - display: true
-        legible: Tarrant County
+        legible: Tarrant County, TX
         href: http://access.tarrantcounty.com/en/elections.html
         title: Poll Worker
         time: Nov 2015
