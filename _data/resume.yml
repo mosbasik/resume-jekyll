@@ -112,7 +112,7 @@ infosections:
         href: https://mosbasik.github.io/exhaleheb/
         time: In Progress
         body:
-          - Organizational site / posting platform for a discussion group organized by family members
+          - Organizational site/posting platform for a discussion group organized by family members
           - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
 
       - display: true
@@ -131,17 +131,17 @@ infosections:
           - Rewrite of existing website used by Eve Online players to post wormhole sale listings
           - Adds significantly more granular order sorting/searching capability and more accurate input validation
           - Interfaces with the Eve Online API and certain crowdsourced datasets not distributed officially
-          - Backend is Django and SQLite3; frontend is HTML/CSS, JS/jQuery and Bootstrap
+          - Backend is Python/Django and SQLite3; frontend is HTML/CSS, JS/jQuery and Bootstrap
 
       - display: true
         legible: moviepicker.peterhenry.net
         href: http://moviepicker.peterhenry.net/
         time: Jul 2015
         body:
-          - Webapp designed to answer the question "What should we watch tonight?
+          - Webapp designed to answer the question "What should we watch tonight?"
           - Users select an arbitrarily large set of movies that they are personally interested in watching
           - Aggregates of user movie selections are used to display movies that subsets of users want to watch
-          - Uses IMDB dataset via the OmniDB API, as well as Django, SQLite3, JS/jQuery and Bootstrap
+          - Uses IMDB dataset via the OMNb API, as well as Python/Django, SQLite3, JS/jQuery and Bootstrap
           # - Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
 
       - display: true
