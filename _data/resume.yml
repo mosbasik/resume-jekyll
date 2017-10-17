@@ -115,7 +115,7 @@ infosections:
       - display: true
         legible: mosbasik.github.io/exhaleheb
         href: https://mosbasik.github.io/exhaleheb/
-        time: In Progress
+        time: Oct 2016
         body:
           - Organizational site/posting platform for a discussion group organized by family members
           - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
