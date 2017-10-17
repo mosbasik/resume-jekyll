@@ -1,6 +1,6 @@
 
 # By the way, http://stackoverflow.com/a/21699210 has great information on
-# multi-line string behavior in YAML.  Check it out. 
+# multi-line string behavior in YAML.  Check it out.
 
 name: Peter Henry
 
@@ -75,29 +75,34 @@ skills:
   heading: Technical Skills
   body:
     - Python
-    - Java
-    - SQL
-    - C/C++
-    - HTML/CSS
     - JavaScript
-    - PHP
-    - IA32/ARM7
-    - Scheme
-    - Haskell
+    - C/C++
+    - Django
+    - SQL
+
+    - Docker
+    - Ansible
+    - Vagrant
+    - Git
+    - Vim
+
     - Arch
-    - CentOS
+    - RHEL/CentOS
     - Debian
     - Windows
     - OSX
-    - Git
+
+    - Java
+    - HTML/CSS
     - <span class="latex">L<span class="a">a</span>T<span class="e">e</span>X</span>
-    - Vim
-    - Mathematica
-    - VirtualBox
+    - PHP
+    - IA32/ARM
+
     - English
     - French
     - MS Office
     - Adobe CS
+    - Mathematica
 
 # long form information blocks
 infosections:
@@ -110,7 +115,7 @@ infosections:
       - display: true
         legible: mosbasik.github.io/exhaleheb
         href: https://mosbasik.github.io/exhaleheb/
-        time: In Progress
+        time: Oct 2016
         body:
           - Organizational site/posting platform for a discussion group organized by family members
           - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
@@ -144,16 +149,16 @@ infosections:
           - Uses IMDB dataset via the OMNb API, as well as Python/Django, SQLite3, JS/jQuery and Bootstrap
           # - Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
 
-      - display: true
-        legible: github.com/mosbasik/rvagaming
-        href: https://github.com/mosbasik/rvagaming
-        time: Jul 2012 to Jul 2014
-        body:
-          - Website for group of gamers from my high school, written in Python, PHP and MySQL
-          - Database of users, account handles and alternate accounts powered by Facebook/Steam public APIs
-          - Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
-          # - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
-          # - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
+      # - display: true
+      #   legible: github.com/mosbasik/rvagaming
+      #   href: https://github.com/mosbasik/rvagaming
+      #   time: Jul 2012 to Jul 2014
+      #   body:
+      #     - Website for group of gamers from my high school, written in Python, PHP and MySQL
+      #     - Database of users, account handles and alternate accounts powered by Facebook/Steam public APIs
+      #     - Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
+      #     # - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
+      #     # - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
 
   # List of work experience
   - display: true # set as false if you don't want to render this section
@@ -161,23 +166,32 @@ infosections:
     body:
 
       - display: true
+        legible: UT Southwestern Radiation Oncology
+        href: http://www.utsouthwestern.edu/education/medical-school/departments/radiation-oncology
+        title: Programmer Analyst
+        time: Dec 2016 - Current
+        body:
+          - Design node deploy/update system for indoor, real-time location network comprising ~200 nodes
+          - Dockerize clinical scheduling app to streamline employee onboarding & production deployment
+
+      - display: true
+        legible: Tarrant County, TX
+        href: http://access.tarrantcounty.com/en/elections.html
+        title: Polling Place Clerk
+        time: Nov 2015, Nov 2016
+        body:
+          - Set up / dismantle Election Day equipment at precinct polling place
+          - Assist voters with the voting process and ensure proper procedures are followed
+
+      - display: true
         legible: Belk
         href: https://www.belk.com/
-        title: Stocker (Temporary Position)
+        title: Temporary Stocker
         time: Feb 2016 - Mar 2016
         body:
           - Process daily shipments and perform weekly inventories of stockroom and display counters
           - Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
           - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
-
-      - display: true
-        legible: Tarrant County, TX
-        href: http://access.tarrantcounty.com/en/elections.html
-        title: Poll Worker
-        time: Nov 2015
-        body:
-          - Set up / dismantle Election Day equipment at local polling place
-          - Assist voters with the voting process and ensure proper procedures are followed
 
       - display: true
         legible: Caltech
