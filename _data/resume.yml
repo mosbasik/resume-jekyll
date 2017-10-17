@@ -150,9 +150,10 @@ infosections:
         title: Information Management Systems & Services Rep
         time: Jun 2013 - Jun 2015
         body:
-          - Configure, secure, and maintain CentOS server belonging to a Caltech undergraduate residence
+          - Administer web/email/storage servers belonging to Caltech's Ricketts House
+          - Contribute features/bugfixes to house website
           - Maintain house network, machines and printers and recommend purchases
-          - Provide computer/network assistance to house members
+          # - Provide computer/network assistance to house members
 
       - display: true
         legible: The Seed Company
