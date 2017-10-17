@@ -122,8 +122,10 @@ infosections:
         title: Programmer Analyst
         time: Dec 2016 - Sep 2017
         body:
-          - Design node deploy/update system for indoor, real-time location network comprising ~200 nodes
-          - Dockerize clinical scheduling app to streamline employee onboarding & production deployment
+          - Research/test algorithms for indoor Bluetooth beacon location tracking system
+          - Design/implement deployment/update system for ~200 Raspberry Pi network with Ansible
+          - Design/implement central logging system for department servers with Elasticsearch/Logstash/Kibana
+          - Dockerize clinical scheduling web app to streamline deployment and employee onboarding
 
       - display: true
         legible: Tarrant County, TX
