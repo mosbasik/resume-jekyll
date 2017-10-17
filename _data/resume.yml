@@ -116,7 +116,7 @@ infosections:
         legible: UT Southwestern Radiation Oncology
         href: http://www.utsouthwestern.edu/education/medical-school/departments/radiation-oncology
         title: Programmer Analyst
-        time: Dec 2016 - Current
+        time: Dec 2016 - Sep 2017
         body:
           - Design node deploy/update system for indoor, real-time location network comprising ~200 nodes
           - Dockerize clinical scheduling app to streamline employee onboarding & production deployment
