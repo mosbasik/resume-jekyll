@@ -160,12 +160,12 @@ infosections:
       - display: true
         legible: The Seed Company
         href: https://theseedcompany.org/
-        title: IT Intern
+        title: IT Internship
         time: Jul 2012 - Sep 2012
         body:
-          - Migrate local/overseas email accounts and data to new MS Exchange server
-          - Contact employees to schedule migrations/maintain migration priority rosters
-          - Document problems/unusual cases and write tutorials for company wiki (Mac/Linux migrations, etc)
+          - Migrate local and remote legacy employee email accounts to MS Exchange
+          - Maintain migration priority rosters and contact employees to schedule migrations
+          - Document solutions for problems/unusual cases on internal wiki (Mac/Linux migrations, etc)
           - Securely wipe and reconfigure used hardware for resale
 
   # List of volunteer positions
