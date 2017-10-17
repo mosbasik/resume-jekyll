@@ -133,12 +133,12 @@ infosections:
       - display: true
         legible: Belk
         href: https://www.belk.com/
-        title: Temporary Stocker
+        title: Stocker (Temporary Position)
         time: Feb 2016 - Mar 2016
         body:
           - Process daily shipments and perform weekly inventories of stockroom and display counters
-          - Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
-          - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
+          - Plan stockroom layouts to maximize stocking/retrieving efficiency
+          # - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
 
       - display: true
         legible: Caltech
