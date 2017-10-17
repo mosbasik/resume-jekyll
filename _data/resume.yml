@@ -76,15 +76,21 @@ skills:
   body:
     - Python
     - JavaScript
+    - Java
     - C/C++
-    - Django
     - SQL
 
+    - Django
+    - Node.js
+    - Vue.js
+    - LAMP stack
+    - ELK stack
+
+    - RabbitMQ
+    - MongoDB
     - Docker
     - Ansible
     - Vagrant
-    - Git
-    - Vim
 
     - Arch
     - RHEL/CentOS
@@ -92,17 +98,15 @@ skills:
     - Windows
     - OSX
 
-    - HTML/CSS
-    - Java
     - <span class="latex">L<span class="a">a</span>T<span class="e">e</span>X</span>
-    - PHP
-    - IA32/ARM
-
+    - HTML/CSS
+    - MS Office
     - English
     - French
-    - MS Office
-    - Adobe CS
-    - Mathematica
+
+    # - Git
+    # - Vim
+    # - Mathematica
 
 # long form information blocks
 infosections:
