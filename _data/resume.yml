@@ -162,7 +162,7 @@ infosections:
 
   # List of work experience
   - display: true # set as false if you don't want to render this section
-    heading: Work Experience
+    heading: Work History
     body:
 
       - display: true
@@ -216,7 +216,7 @@ infosections:
 
   # List of volunteer positions
   - display: true
-    heading: Volunteer Experience
+    heading: Volunteer History
     body:
 
       - display: true
