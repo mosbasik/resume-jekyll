@@ -166,14 +166,13 @@ infosections:
     body:
 
       - display: true
-        legible: Belk
-        href: https://www.belk.com/
-        title: Stocker (Temporary Position)
-        time: Feb 2016 - Mar 2016
+        legible: UT Southwestern Radiation Oncology
+        href: http://www.utsouthwestern.edu/education/medical-school/departments/radiation-oncology
+        title: Programmer Analyst
+        time: Dec 2016 - Current
         body:
-          - Process daily shipments and perform weekly inventories of stockroom and display counters
-          - Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
-          - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
+          - Design node deploy/update system for indoor, real-time location network comprising ~200 nodes
+          - Dockerize clinical scheduling app to streamline employee onboarding & production deployment
 
       - display: true
         legible: Tarrant County, TX
@@ -183,6 +182,16 @@ infosections:
         body:
           - Set up / dismantle Election Day equipment at precinct polling place
           - Assist voters with the voting process and ensure proper procedures are followed
+
+      - display: true
+        legible: Belk
+        href: https://www.belk.com/
+        title: Temporary Stocker
+        time: Feb 2016 - Mar 2016
+        body:
+          - Process daily shipments and perform weekly inventories of stockroom and display counters
+          - Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
+          - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
 
       - display: true
         legible: Caltech
