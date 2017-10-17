@@ -259,7 +259,7 @@ infosections:
 
   # List of relevent coursework
   - display: true # set as false if you don't want to render this section
-    heading: Coursework/Miniprojects
+    heading: Coursework
     body:
 
       - display: true
