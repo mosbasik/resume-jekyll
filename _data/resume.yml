@@ -75,29 +75,34 @@ skills:
   heading: Technical Skills
   body:
     - Python
-    - Java
-    - SQL
-    - C/C++
-    - HTML/CSS
     - JavaScript
-    - PHP
-    - IA32/ARM7
-    - Scheme
-    - Haskell
+    - C/C++
+    - Django
+    - SQL
+
+    - Docker
+    - Ansible
+    - Vagrant
+    - Git
+    - Vim
+
     - Arch
-    - CentOS
+    - RHEL/CentOS
     - Debian
     - Windows
     - OSX
-    - Git
+
+    - Java
+    - HTML/CSS
     - <span class="latex">L<span class="a">a</span>T<span class="e">e</span>X</span>
-    - Vim
-    - Mathematica
-    - VirtualBox
+    - PHP
+    - IA32/ARM
+
     - English
     - French
     - MS Office
     - Adobe CS
+    - Mathematica
 
 # long form information blocks
 infosections:
