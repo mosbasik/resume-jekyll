@@ -54,9 +54,9 @@ intro:
   display: true # set as false if you don't want to render this section
   heading: Objective # "Summary" is another common opener
   body: |
-    Seeking an information technology internship or co-op position to gain
-    experience in applied computer science, system analysis/administration, or
-    application development.
+    Seeking information technology internship or co-op position in applied
+    computer science, system analysis/administration, or application
+    development.
 
 # Information about level of education
 education:
@@ -76,15 +76,21 @@ skills:
   body:
     - Python
     - JavaScript
+    - Java
     - C/C++
-    - Django
     - SQL
 
+    - Django
+    - Node.js
+    - Vue.js
+    - LAMP stack
+    - ELK stack
+
+    - RabbitMQ
+    - MongoDB
     - Docker
     - Ansible
     - Vagrant
-    - Git
-    - Vim
 
     - Arch
     - RHEL/CentOS
@@ -92,20 +98,111 @@ skills:
     - Windows
     - OSX
 
-    - Java
-    - HTML/CSS
     - <span class="latex">L<span class="a">a</span>T<span class="e">e</span>X</span>
-    - PHP
-    - IA32/ARM
-
+    - HTML/CSS
+    - MS Office
     - English
     - French
-    - MS Office
-    - Adobe CS
-    - Mathematica
+
+    # - Git
+    # - Vim
+    # - Mathematica
 
 # long form information blocks
 infosections:
+
+  # List of work experience
+  - display: true # set as false if you don't want to render this section
+    heading: Work History
+    body:
+
+      - display: true
+        legible: UT Southwestern Radiation Oncology
+        href: http://www.utsouthwestern.edu/education/medical-school/departments/radiation-oncology
+        title: Programmer Analyst
+        time: Dec 2016 - Sep 2017
+        body:
+          - Research/test algorithms for indoor Bluetooth beacon location tracking system
+          - Design/implement deployment/update system for ~200 Raspberry Pi network with Ansible
+          - Design/implement central logging system for department servers with Elasticsearch/Logstash/Kibana
+          - Dockerize clinical scheduling web app to streamline deployment and employee onboarding
+
+      - display: true
+        legible: Tarrant County, TX
+        href: http://access.tarrantcounty.com/en/elections.html
+        title: Polling Place Clerk
+        time: Nov 2015, Nov 2016
+        body:
+          - Set up / dismantle Election Day equipment at precinct polling place
+          - Assist voters with the voting process and ensure proper procedures are followed
+
+      - display: true
+        legible: Belk
+        href: https://www.belk.com/
+        title: Stocker (Temporary Position)
+        time: Feb 2016 - Mar 2016
+        body:
+          - Process daily shipments and perform weekly inventories of stockroom and display counters
+          - Plan stockroom layouts to maximize stocking/retrieving efficiency
+          # - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
+
+      - display: true
+        legible: Caltech
+        href: https://www.imss.caltech.edu/node/279
+        title: Information Management Systems & Services Rep
+        time: Jun 2013 - Jun 2015
+        body:
+          - Administer web/email/storage servers belonging to Caltech's Ricketts House
+          - Contribute features/bugfixes to house website
+          - Maintain house network, machines and printers and recommend purchases
+          # - Provide computer/network assistance to house members
+
+      - display: true
+        legible: The Seed Company
+        href: https://theseedcompany.org/
+        title: IT Internship
+        time: Jul 2012 - Sep 2012
+        body:
+          - Migrate local and remote legacy employee email accounts to MS Exchange
+          - Maintain migration priority rosters and contact employees to schedule migrations
+          - Document solutions for problems/unusual cases on internal wiki (Mac/Linux migrations, etc)
+          - Securely wipe and reconfigure used hardware for resale
+
+  # List of volunteer positions
+  - display: true
+    heading: Volunteer History
+    body:
+
+      - display: true
+        legible: Ricketts House
+        href: http://ricketts.caltech.edu/
+        title: Vice President
+        time: Feb 2014 - Feb 2015
+        body:
+          - Coordinate room assignments for Caltech's Ricketts House
+          - Manage logistics of house events (inventory, purchasing, cleanup)
+          - Liaison between administrative staff and undergraduate residents
+
+      - display: true
+        legible: Covenant Church Colleyville
+        href: https://www.covenantchurch.org/
+        title: Media Team Member
+        time: Jul 2011 - Present
+        body:
+          - Maintain internally consistent and easily searchable persistent media library
+          - Coordinate with presenters regarding new material they intend to show
+          - Provide the audience with undistracting high-quality audio and visuals
+
+      - display: true
+        legible: Rift Valley Academy Class Fundraising
+        href: http://rva.org/
+        title: Job Coordinator
+        time: Sep 2010 - Jul 2011
+        body:
+          - Develop/maintain database of workers by coordinating with class sponsors, coaches, and teachers
+          - Track work histories to ensure reasonable hours and tweak schedules of under-performing students
+          - Generate and distribute assignment rosters to student managers and class sponsors
+          # - Enforce disciplinary measures where appropriate, and track offenses for future reference
 
   # List of programming projects
   - display: true # set as false if you don't want to render this section
@@ -113,12 +210,20 @@ infosections:
     body:
 
       - display: true
-        legible: mosbasik.github.io/exhaleheb
-        href: https://mosbasik.github.io/exhaleheb/
-        time: Oct 2016
+        legible: peterhenry.net
+        href: https://peterhenry.net/
+        time: Sep 2015 - Present
         body:
-          - Organizational site/posting platform for a discussion group organized by family members
-          - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
+          - Simple personal website where I can blog, write up projects, record ideas, etc
+          - Place to experiment with capabilities of Jekyll/SCSS without Github Pages limitations
+
+      # - display: true
+      #   legible: mosbasik.github.io/exhaleheb
+      #   href: https://mosbasik.github.io/exhaleheb/
+      #   time: Oct 2016
+      #   body:
+      #     - Organizational site/posting platform for a discussion group organized by family members
+      #     - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
 
       - display: true
         legible: mosbasik.github.io/skillfarming
@@ -160,99 +265,9 @@ infosections:
       #     # - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
       #     # - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
 
-  # List of work experience
-  - display: true # set as false if you don't want to render this section
-    heading: Work Experience
-    body:
-
-      - display: true
-        legible: UT Southwestern Radiation Oncology
-        href: http://www.utsouthwestern.edu/education/medical-school/departments/radiation-oncology
-        title: Programmer Analyst
-        time: Dec 2016 - Current
-        body:
-          - Design node deploy/update system for indoor, real-time location network comprising ~200 nodes
-          - Dockerize clinical scheduling app to streamline employee onboarding & production deployment
-
-      - display: true
-        legible: Tarrant County, TX
-        href: http://access.tarrantcounty.com/en/elections.html
-        title: Polling Place Clerk
-        time: Nov 2015, Nov 2016
-        body:
-          - Set up / dismantle Election Day equipment at precinct polling place
-          - Assist voters with the voting process and ensure proper procedures are followed
-
-      - display: true
-        legible: Belk
-        href: https://www.belk.com/
-        title: Temporary Stocker
-        time: Feb 2016 - Mar 2016
-        body:
-          - Process daily shipments and perform weekly inventories of stockroom and display counters
-          - Plan women's shoes stockroom layout for maximally efficient stocking/retrieving
-          - Retrieve/recommend footwear for customers, make sales and operate point-of-sale stations
-
-      - display: true
-        legible: Caltech
-        href: https://www.imss.caltech.edu/node/279
-        title: Information Management Systems & Services Rep
-        time: Jun 2013 - Jun 2015
-        body:
-          - Configure, secure, and maintain CentOS server belonging to a Caltech undergraduate residence
-          - Maintain house network, machines and printers and recommend purchases
-          - Provide computer/network assistance to house members
-
-      - display: true
-        legible: The Seed Company
-        href: https://theseedcompany.org/
-        title: IT Intern
-        time: Jul 2012 - Sep 2012
-        body:
-          - Migrate local/overseas email accounts and data to new MS Exchange server
-          - Contact employees to schedule migrations/maintain migration priority rosters
-          - Document problems/unusual cases and write tutorials for company wiki (Mac/Linux migrations, etc)
-          - Securely wipe and reconfigure used hardware for resale
-
-  # List of volunteer positions
-  - display: true
-    heading: Volunteer Experience
-    body:
-
-      - display: true
-        legible: Ricketts House
-        href: http://ricketts.caltech.edu/
-        title: Vice President
-        time: Feb 2014 - Feb 2015
-        body:
-          - Housing assignments coordinator for a Caltech undergraduate residence
-          - Liaison between administrative staff and undergraduates
-          - House events and logistics manager (inventory, purchasing, cleanup)
-
-      - display: true
-        legible: Covenant Church Colleyville
-        href: http://www.covenantcolleyville.org/
-        title: Media Team Member
-        time: Jul 2011 - Present
-        body:
-          - Maintain internally consistent and easily searchable persistent media library
-          - Coordinate with presenters regarding new material they intend to show
-          - Provide the audience with undistracting high-quality audio and visuals
-
-      - display: true
-        legible: Rift Valley Academy Class Fundraising
-        href: http://rva.org/
-        title: Job Coordinator
-        time: Sep 2010 - Jul 2011
-        body:
-          - Develop/maintain database of workers by coordinating with class sponsors, coaches, and teachers
-          - Track work histories to ensure reasonable hours and tweak schedules of under-performing students
-          - Generate and distribute assignment rosters to student managers and class sponsors
-          # - Enforce disciplinary measures where appropriate, and track offenses for future reference
-
   # List of relevent coursework
   - display: true # set as false if you don't want to render this section
-    heading: Coursework/Miniprojects
+    heading: Coursework
     body:
 
       - display: true
