@@ -210,12 +210,20 @@ infosections:
     body:
 
       - display: true
-        legible: mosbasik.github.io/exhaleheb
-        href: https://mosbasik.github.io/exhaleheb/
-        time: Oct 2016
+        legible: peterhenry.net
+        href: https://peterhenry.net/
+        time: Sep 2015 - Present
         body:
-          - Organizational site/posting platform for a discussion group organized by family members
-          - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
+          - Simple personal website where I can blog, write up projects, record ideas, etc
+          - Place to experiment with capabilities of Jekyll/SCSS without Github Pages limitations
+
+      # - display: true
+      #   legible: mosbasik.github.io/exhaleheb
+      #   href: https://mosbasik.github.io/exhaleheb/
+      #   time: Oct 2016
+      #   body:
+      #     - Organizational site/posting platform for a discussion group organized by family members
+      #     - Rewrite of existing Google Site for more features using Jekyll, GitHub Pages, Prose.io
 
       - display: true
         legible: mosbasik.github.io/skillfarming
