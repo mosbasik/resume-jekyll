@@ -54,9 +54,9 @@ intro:
   display: true # set as false if you don't want to render this section
   heading: Objective # "Summary" is another common opener
   body: |
-    Seeking an information technology internship or co-op position to gain
-    experience in applied computer science, system analysis/administration, or
-    application development.
+    Seeking information technology internship or co-op position in applied
+    computer science, system analysis/administration, or application
+    development.
 
 # Information about level of education
 education:
