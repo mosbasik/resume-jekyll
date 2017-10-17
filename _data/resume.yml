@@ -178,10 +178,10 @@ infosections:
       - display: true
         legible: Tarrant County, TX
         href: http://access.tarrantcounty.com/en/elections.html
-        title: Poll Worker
-        time: Nov 2015
+        title: Polling Place Clerk
+        time: Nov 2015, Nov 2016
         body:
-          - Set up / dismantle Election Day equipment at local polling place
+          - Set up / dismantle Election Day equipment at precinct polling place
           - Assist voters with the voting process and ensure proper procedures are followed
 
       - display: true
