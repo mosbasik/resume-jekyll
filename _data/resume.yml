@@ -149,16 +149,16 @@ infosections:
           - Uses IMDB dataset via the OMNb API, as well as Python/Django, SQLite3, JS/jQuery and Bootstrap
           # - Backend is Python/Django and SQLite3; front-end in HTML/CSS, Javascript/jQuery and Bootstrap
 
-      - display: true
-        legible: github.com/mosbasik/rvagaming
-        href: https://github.com/mosbasik/rvagaming
-        time: Jul 2012 to Jul 2014
-        body:
-          - Website for group of gamers from my high school, written in Python, PHP and MySQL
-          - Database of users, account handles and alternate accounts powered by Facebook/Steam public APIs
-          - Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
-          # - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
-          # - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
+      # - display: true
+      #   legible: github.com/mosbasik/rvagaming
+      #   href: https://github.com/mosbasik/rvagaming
+      #   time: Jul 2012 to Jul 2014
+      #   body:
+      #     - Website for group of gamers from my high school, written in Python, PHP and MySQL
+      #     - Database of users, account handles and alternate accounts powered by Facebook/Steam public APIs
+      #     - Database of all matches played by users powered by Python’s Beautiful Soup web scraping library
+      #     # - Static reference pages (client settings, common issues, console tweaks, game guides, and other content)
+      #     # - Back-end written in Python, PHP, and MySQL; front-end in HTML/CSS and JavaScript/jQuery
 
   # List of work experience
   - display: true # set as false if you don't want to render this section
