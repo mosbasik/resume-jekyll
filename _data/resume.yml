@@ -210,6 +210,14 @@ infosections:
     body:
 
       - display: true
+        legible: github.com/mosbasik/fluidspaces
+        href: https://github.com/mosbasik/fluidspaces
+        time: Oct 2017
+        body:
+          - Intuitive named workspace creation and navigation for tiling window manager i3
+          - Learned to write a properly distributable and easy to install Python package
+
+      - display: true
         legible: peterhenry.net
         href: https://peterhenry.net/
         time: Sep 2015 - Present
